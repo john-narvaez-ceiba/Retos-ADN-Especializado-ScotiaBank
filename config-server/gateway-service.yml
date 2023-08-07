@@ -6,7 +6,8 @@ eureka:
       defaultZone: http://root:scotiabank@localhost:8099/eureka/
 zuul:
   routes:
-    greetings:
+    book-service:
       path: /book-service/**
       serviceId: BOOK-SERVICE
-      stripPrefix: false
+    discovery:
+      path=/eureka-service/**:
