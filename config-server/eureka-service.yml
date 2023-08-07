@@ -1,11 +1,15 @@
 server:
   port: 8099
 
+spring:
+  security:
+    user:
+      name: root
+      password: scotiabank
+
 eureka:
   instance:
     hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
-   
-    
