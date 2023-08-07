@@ -2,6 +2,7 @@ server:
   port: 8080
 eureka:
   client:
+    registerWithEureka: false
     serviceUrl:
       defaultZone: http://root:scotiabank@localhost:8099/eureka/
 zuul:
