@@ -16,6 +16,7 @@ spring:
     user:
       name: root
       password: scotiabank
+      roles: ADMIN
 eureka:
   client:
     serviceUrl:
