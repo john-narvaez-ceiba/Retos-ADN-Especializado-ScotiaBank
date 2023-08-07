@@ -4,6 +4,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://root:scotiabank@localhost:8099/eureka/
-spring:
-  main:
-    web-application-type: reactive
