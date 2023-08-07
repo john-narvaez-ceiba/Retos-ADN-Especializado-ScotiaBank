@@ -8,6 +8,5 @@ zuul:
   routes:
     book-service:
       path: /book-service/**
-      serviceId: BOOK-SERVICE
     eureka-service:
       path: /eureka-service/**
