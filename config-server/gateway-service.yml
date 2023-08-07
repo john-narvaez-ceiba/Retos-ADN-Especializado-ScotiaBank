@@ -13,3 +13,4 @@ zuul:
       stripPrefix: false
     eureka-service:
       path: /eureka-service/**
+      url: http://localhost:8099
