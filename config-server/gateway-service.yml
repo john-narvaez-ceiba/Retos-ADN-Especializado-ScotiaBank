@@ -1,18 +1,16 @@
 server:
   port: 8080
-spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true    
 eureka:
   client:
-    registerWithEureka: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
       defaultZone: http://root:scotiabank@localhost:8099/eureka/
 zuul:
   routes:
     book-service:
       path: /book-service/**
+      serviceId: BOOK-SERVICE
+      stripPrefix: true
     eureka-service:
       path: /eureka-service/**
