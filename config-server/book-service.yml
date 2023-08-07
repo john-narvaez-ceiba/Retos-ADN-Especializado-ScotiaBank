@@ -12,11 +12,16 @@ spring:
     hibernate:
       use-new-id-generator-mappings: 'false'
       ddl-auto: update
-  security:
-    user:
-      name: root
-      password: scotiabank
-      roles: ADMIN
+application:
+  users:
+    -
+      username: guest
+      password: guest1234
+      roles: USER
+    -
+      username: admin
+      password: admin1234
+      roles: USER,ADMIN
 eureka:
   client:
     serviceUrl:
