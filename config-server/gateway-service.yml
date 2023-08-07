@@ -9,5 +9,5 @@ zuul:
     book-service:
       path: /book-service/**
       serviceId: BOOK-SERVICE
-    discovery:
-      path=/eureka-service/**:
+    eureka-service:
+      path: /eureka-service/**
