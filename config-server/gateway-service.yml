@@ -4,13 +4,10 @@ eureka:
   client:
     registerWithEureka: false
     serviceUrl:
-      defaultZone: http://root:scotiabank@localhost:8099/eureka/
+      defaultZone: http://localhost:1111/eureka/
 zuul:
   routes:
     book-service:
       path: /book-service/**
-      serviceId: BOOK-SERVICE
+      serviceId: GREETING-SERVICE
       stripPrefix: false
-    eureka-service:
-      path: /eureka-service/**
-      url: http://root:scotiabank@localhost:8099
