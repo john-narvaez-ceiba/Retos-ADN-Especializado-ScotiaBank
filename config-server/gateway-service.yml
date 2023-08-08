@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://localhost:1111/eureka/
 zuul:
   routes:
-    book-service:
-      path: /book-service/**
+    greetings:
+      path: /greeting/**
       serviceId: GREETING-SERVICE
       stripPrefix: false
