@@ -11,3 +11,6 @@ zuul:
       path: /book-service/**
       serviceId: BOOK-SERVICE
       stripPrefix: false
+    eureka-service:
+      path: /eureka-service/**
+      url: http://root:scotiabank@localhost:8099
