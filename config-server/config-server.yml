@@ -1,0 +1,8 @@
+server:
+  port: 8081
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://root:scotiabank@localhost:8099/eureka/
